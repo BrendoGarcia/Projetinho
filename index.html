@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Produtos</title>
+</head>
+<body>
+
+  
+  
+  <div id="mensagem" class="aba">O produto foi adicionado ao carrinho.<span onclick="fecharAba()"> Fechar</span></div>
+
+  <header>
+    <a href="/index.html" class="logo"><i class='bx bxs-package'></i>ProductZ</a>
+      <ul class="navegação">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Avaliações</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul><!--Navegação-->
+
+    <div class="header-icons">
+      <span class="contadordeitens"></span>
+      <div class="carrinhoaqui">
+
+        <button class="butaocarrinho"> <i class='bx bx-cart' id="carrinho"></i> 
+          <div class="itensnocarinho" id="itensNoCarrinho" style="display: none;">
+            <div class="carrinho-conteudo"> <!-- Novo elemento div para conter os itens do carrinho -->
+              <!-- Lista de itens no carrinho -->
+              <ul id="listaItensCarrinho"></ul>
+            </div>
+            <div class="resumo-carrinho" style="display: none;">
+              <ul id="listaItensCarrinhoResumo"></ul>
+              <p id="subtotal"></p>
+              <button id="botaoFinalizarCompra" style="display: none; ">Finalizar Compra</button>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+
+  <section class="galeria"">
+
+    <a class="produto a venda" href="/produto.html"> <div class="conteudo">
+      <img src="/imgs/tomiePink.png">
+        <h3>Moletom</h3>
+        <p class="mol">Moletom anime unisex tomie, cor rosa oversized</p>
+      <option class="nomeproduto" id="nome" value="Moletom" style="display: none;" >Moletom</option>
+      <h6 class="reeco" value="135.99"> R$135.99</h6> 
+      <option class="precoproduto" id="preco" value="135.99" style="display: none;">135.99</option>
+        <ul>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bx-star"></i></li>
+        </ul>
+    </a>
+    <p>Quantidade:</p>
+    <input type="number" class="quantidade" value="1" min="1">
+        <button class="btn">comprar</button>
+      </div>
+
+      <div class="conteudo">
+        <img src="/imgs/headset.png">
+        <h3>Headset</h3>
+        <p class="mol">Headset gamer com microfone, surround sound</p>
+        <option class="nomeproduto" id="nome" value="Moletom" style="display: none;" >Headset</option>
+        <h6 class="reeco" value="135.99"> R$175.99</h6> 
+        <option class="precoproduto" id="preco" value="135.99" style="display: none;">175.99</option>
+        <ul>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star"></i></li>
+          <li><i class="bx bxs-star-half"></i></li>
+          <li><i class="bx bx-star"></i></li>
+        </ul>
+        <p>Quantidade:</p>
+        <input type="number" class="quantidade" value="1" min="1">
+        <button class="btn">Comprar</button>
+      </div>
+
+
+        <div class="conteudo">
+          <img src="/imgs/mouse teclado-Photoroom.png-Photoroom.png">
+          <h3>Kit gamer</h3>
+          <p class="mol">Kit mouse e teclado gamer led, rgb 8 cores, switch azul </p>
+          <option class="nomeproduto" id="nome" value="Kit gamer" style="display: none;" >Kit gamer</option>
+          <h6 class="reeco" value="257.89"> R$257.89</h6> 
+          <option class="precoproduto" id="preco" value="257.89" style="display: none;">257.89</option>
+          <ul>
+            <li><i class="bx bxs-star"></i></li>
+            <li><i class="bx bxs-star"></i></li>
+            <li><i class="bx bxs-star"></i></li>
+            <li><i class="bx bxs-star"></i></li>
+            <li><i class="bx bxs-star"></i></li>
+          </ul>
+          <p>Quantidade:</p>
+          <input type="number" class="quantidade" value="1" min="1">
+          <button class="btn">Comprar</button>
+        </div>    
+      </section>
+
+      
+<script src="scriptinh.js"></script>
+</body>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
+
+  <br></br>
+  <footer>
+       <ul>
+        <li><i class='bx bxl-whatsapp' ></i></li>
+        <li><i class='bx bxs-envelope' ></i>  </li>
+        <li><i class='bx bxl-twitter'></i></li>
+      </ul>
+      <p>&copy;2024 ProductZ, Inc</p>
+
+  </footer>
+</html>
