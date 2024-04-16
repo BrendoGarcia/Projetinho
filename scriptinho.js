@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
       const imagemProdutoElement = document.createElement("img");
       imagemProdutoElement.src = imagemProduto; // Define a URL da imagem do produto
       novoItemCarrinho.appendChild(imagemProdutoElement); 
-      
 
 
 
