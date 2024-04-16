@@ -389,3 +389,12 @@ input{
   overflow-y: auto; /* Adiciona rolagem vertical caso a lista de itens seja maior que a altura máxima */
 }
 
+#listaItensCarrinho img {
+  max-width: 100px; /* Defina a largura máxima desejada para a imagem */
+  max-height: 100px; /* Defina a altura máxima desejada para a imagem */
+}
+
+.subtotal{
+  color: #5aaa5a;
+}
+
