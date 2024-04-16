@@ -33,11 +33,16 @@ document.addEventListener("DOMContentLoaded", function() {
       const nomeProduto = produto.querySelector(".nomeproduto").innerText;
       const precoProduto = parseFloat(produto.querySelector(".precoproduto").innerText);
       const quantidade = parseInt(produto.querySelector(".quantidade").value);
+      const imagemProduto = produto.querySelector(".imgs").src;
       calcularSubtotal();
       atualizarContadorItens()
       // Criar um novo item de lista para o carrinho
       const novoItemCarrinho = document.createElement("li");
       novoItemCarrinho.innerText = nomeProduto + " - " + "R$:" + precoProduto + " x " + quantidade ;
+      const imagemProdutoElement = document.createElement("img");
+      imagemProdutoElement.src = imagemProduto; // Define a URL da imagem do produto
+      novoItemCarrinho.appendChild(imagemProdutoElement); 
+      
 
 
 
